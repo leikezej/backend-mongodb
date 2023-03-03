@@ -9,17 +9,17 @@ module.exports = function(app) {
     next();
   });
 
-  app.post("/booking/create", controller.create);
+  app.post("/api/booking/create", controller.create);
 
-  app.get("/booking/findAll", controller.findAll);
+  app.get("/api/booking/findAll", controller.findAll);
 
-  app.get("/booking/:id", controller.findOne);
+  app.get("/api/booking/:id", controller.findOne);
 
-  app.put("/booking/:id", controller.update);
+  app.put("/api/booking/:id", controller.update);
 
-  app.delete("/booking/:id", controller.delete);
+  app.delete("/api/booking/:id", controller.delete);
 
-  app.get("/booking/published", controller.findAllPublished);
+  app.get("/api/booking/published", controller.findAllPublished);
 
 };
 

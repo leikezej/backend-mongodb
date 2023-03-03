@@ -14,6 +14,15 @@ const BookingSchema = new Schema({
     type: Date,
     default: Date.now()
   },
+  roles: [
+    {
+      // type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
+      enum: ["pending", "approved", "rejected"],
+      default: "pending",
+      ref: "Patient",
+    }
+  ],
   published: Boolean,
   // attendance:  {
   //   type:  Boolean,
