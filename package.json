@@ -1,0 +1,55 @@
+{
+  "name": "backend-mongodb",
+  "version": "1.0.0",
+  "description": "Build Secure Node.js, MongoDB, Express RESTful API From Scratch With JWT Authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "DEBUG=express-session npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "origin https://github.com/leikezej/backend-mongodb.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "jwt",
+    "authentication",
+    "mongodb",
+    "mongoose",
+    "login",
+    "registration",
+    "user management",
+    "authorization",
+    "MongoDB Demo",
+    "upload",
+    "multiple",
+    "files"
+  ],
+  "author": "jep zekiel",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.9.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-gridfs-storage": "^5.0.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
